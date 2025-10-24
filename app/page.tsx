@@ -25,7 +25,7 @@ export default function Home() {
   } = useSearch(activeCoupons, ["title", "description", "code", "store"])
 
   useEffect(() => {
-    trackPageView("/", "Home - Offer Atlas")
+    trackPageView("/", "Home - DealHub")
   }, [])
 
   const heroFeaturedStores =

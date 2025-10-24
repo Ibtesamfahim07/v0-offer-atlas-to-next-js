@@ -12,7 +12,6 @@ export const useSearch = <T extends Record<string, any>>(items: T[], searchField
   const filteredAndSorted = useMemo(() => {
     let filtered = items
 
-    // Search filter
     if (searchQuery) {
       const query = searchQuery.toLowerCase()
       filtered = filtered.filter((item) =>
@@ -23,12 +22,10 @@ export const useSearch = <T extends Record<string, any>>(items: T[], searchField
       )
     }
 
-    // Category filter
     if (category) {
       filtered = filtered.filter((item) => item.category === category)
     }
 
-    // Sort
     const sorted = [...filtered]
     switch (sortBy) {
       case "popular":

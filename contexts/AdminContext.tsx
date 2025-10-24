@@ -185,7 +185,6 @@ export const AdminProvider = ({ children }: { children: ReactNode }) => {
     return saved ? JSON.parse(saved) : getDefaultHomePageSettings()
   })
 
-  // Persist to localStorage
   useEffect(() => {
     if (typeof window !== "undefined") {
       localStorage.setItem("admin_coupons", JSON.stringify(coupons))

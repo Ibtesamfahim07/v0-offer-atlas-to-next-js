@@ -33,7 +33,7 @@ export default function StorePage() {
 
   useEffect(() => {
     if (store) {
-      trackPageView(`/store/${slug}`, `${store.name} Coupons - Offer Atlas`)
+      trackPageView(`/store/${slug}`, `${store.name} Coupons - DealHub`)
     }
   }, [slug, store])
 

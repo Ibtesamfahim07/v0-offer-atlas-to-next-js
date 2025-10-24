@@ -14,9 +14,9 @@ const geistSans = Geist({ subsets: ["latin"] })
 const geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Offer Atlas - Find Best Deals & Coupons",
+  title: "DealHub - Find Best Deals & Coupons",
   description: "Discover the best coupons, deals, and discounts from top stores",
-    generator: 'v0.app'
+  generator: "v0.app",
 }
 
 export default function RootLayout({
